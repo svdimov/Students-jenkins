@@ -1,6 +1,6 @@
 pipeline{
-    agent{
-        label "node"
+    agent any
+     
     }
     stages{
         stage("Install dependencies"){
@@ -16,4 +16,3 @@ pipeline{
         }
     }
 
-}
