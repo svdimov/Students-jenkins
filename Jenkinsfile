@@ -9,6 +9,11 @@ pipeline{
             }
            
         }
+        stage("Run npm security"){
+             steps{
+                bat "npm audit fix"
+            }
+        }
         stage("Run tests"){
              steps{
                 bat "npm test"
