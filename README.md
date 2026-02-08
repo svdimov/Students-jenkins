@@ -1,2 +1,2 @@
 run test
-testing docker compose automatation 
+testing docker compose 
