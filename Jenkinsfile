@@ -13,7 +13,7 @@ pipeline{
             parallel{
                 stage("Security Testing"){
                     steps{
-                        bat "npm audit"
+                        bat "npm audit --audit-level=high"
                     }
                 }
                 stage("Run uI Testing"){
